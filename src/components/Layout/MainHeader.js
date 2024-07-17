@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import classes from "./MainHeader.module.css";
 
 const MainHeader = () => {
@@ -6,20 +8,20 @@ const MainHeader = () => {
       <div className={classes.logo}>لوگو</div>
       <nav className={classes.nav}>
         <ul>
-          <a href="/">
+          <NavLink to="/">
             <li>خانه</li>
-          </a>
-          <a href="/">
+          </NavLink>
+          <NavLink to="/products">
             <li>محصولات</li>
-          </a>
-          <a href="/">
+          </NavLink>
+          <NavLink to="/contact-us">
             <li>تماس با ما</li>
-          </a>
+          </NavLink>
         </ul>
       </nav>
       <div className={classes.shop}>
-        <a href="/">سبد</a>
-        <a href="/">پروفایل</a>
+        <NavLink to="/basket">سبد</NavLink>
+        <NavLink to="/profile">پروفایل</NavLink>
       </div>
     </header>
   );
