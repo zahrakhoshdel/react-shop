@@ -1,0 +1,55 @@
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  justify-content: center;
+  width: 30%;
+  margin: 0.75rem;
+  background: rgb(191, 219, 254);
+  background: linear-gradient(
+    153deg,
+    rgba(191, 219, 254, 1) 0%,
+    rgba(192, 132, 252, 0.3) 99%
+  );
+}
+
+.icon {
+  text-align: center;
+  width: 25%;
+  height: 100%;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.info {
+  width: 75%;
+  padding: 0.25rem 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin: 0;
+  font-weight: inherit;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 1.25rem;
+  text-align: justify;
+  padding: 0.5rem;
+  padding-top: 0.75rem;
+  margin: 0;
+}
