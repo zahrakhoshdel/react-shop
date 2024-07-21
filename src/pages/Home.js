@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import Carousel from "../components/Carousel/Carousel";
 import CardInfo from "../components/CardInfo/CardInfo";
 import CartSlider from "../components/Products/CartSlider";
+import Banner from "../components/Banner/Banner";
 
 const Home = () => {
   return (
@@ -11,8 +12,7 @@ const Home = () => {
       <CardInfo />
       <h3>جدیدترین محصولات</h3>
       <CartSlider />
-      <div>بنر تمام عرض</div>
-      <div>نوشته ها</div>
+      <Banner />
     </Fragment>
   );
 };
