@@ -1,0 +1,24 @@
+.container {
+  width: 100%;
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-brand {
+  position: relative;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  background: linear-gradient(315deg, #c73de0, #524c9e);
+  padding: 0.25rem;
+}
+
+.card-brand img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 1.75rem;
+}
