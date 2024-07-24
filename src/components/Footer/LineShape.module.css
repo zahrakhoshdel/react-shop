@@ -1,19 +1,21 @@
 .shape {
-    top: -1px;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-  }
-  
-  .shape img {
-    width: calc(100% + 1.3px);
-    height: 1rem;
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    filter: brightness(0) invert(1);
-  }
-  
+  top: -1px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.shape img {
+  width: calc(100% + 1.3px);
+  height: 1rem;
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ .shape-color {
+  filter: brightness(0) invert(1);
+}

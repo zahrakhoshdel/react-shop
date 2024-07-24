@@ -1,33 +1,20 @@
 .footer {
   background-color: rgb(223, 223, 238);
   display: block;
-
   width: 100%;
-
   left: 0;
   bottom: 0;
   right: 0;
-
   margin-top: 6rem;
 }
 
 .footer-main {
   position: relative;
-
-  /* width: 100%; */
-  /* padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; */
 }
 
 .copyright {
-  /* border-top: 1px solid #fff; */
-  padding: 15px 0;
-
+  padding: 1rem 0;
   width: 100%;
-  /* padding-right: 15px;
-  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
 }

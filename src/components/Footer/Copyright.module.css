@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+}
+
+ .shape-color {
+  filter: invert(70%) sepia(7%) saturate(242%) hue-rotate(202deg)
+    brightness(91%) contrast(88%);
+}
+
+.copy {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+}
+
+.wrap {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.wrap p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  direction: ltr;
+  text-align: left;
+  font-size: 16px;
+}
