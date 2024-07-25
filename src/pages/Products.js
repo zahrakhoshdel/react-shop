@@ -1,9 +1,9 @@
+import { productsData } from "../dummydata/productsData";
+
+import AllProducts from "../components/Products/AllProducts";
+
 const Products = () => {
-  return (
-    <div className="centered">
-      <p>صفحه محصولات</p>
-    </div>
-  );
+  return <AllProducts productsData={productsData} />;
 };
 
 export default Products;
