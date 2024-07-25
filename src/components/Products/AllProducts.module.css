@@ -15,7 +15,6 @@
   margin-bottom: 1rem;
 }
 
-
 .sort-wrapper {
   justify-content: space-between;
   align-items: center;
@@ -38,17 +37,6 @@
   padding: 0 1rem;
   padding: 0.75rem;
   cursor: pointer;
-}
-
-.sidebar {
-  padding: 1.25rem;
-  border-color: #7a7a7d;
-  border-width: 1px;
-  border-radius: 1rem;
-  width: 15%;
-  top: 2rem;
-  position: sticky;
-  border-style: solid;
 }
 
 .product-list {

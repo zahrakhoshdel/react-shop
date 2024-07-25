@@ -1,6 +1,7 @@
 import { sortItems } from "../../dummydata/sortItems";
 
 import classes from "./AllProducts.module.css";
+import SidebarBrands from "./SidebarBrands";
 
 const AllProducts = (props) => {
   const allProducts = props.productsData;
@@ -17,7 +18,7 @@ const AllProducts = (props) => {
           </div>
         </div>
       </div>
-      <div className={classes.sidebar}>برندها</div>
+      <SidebarBrands />
 
       <div className={classes["product-list"]}>
         {allProducts.map((product, index) => {

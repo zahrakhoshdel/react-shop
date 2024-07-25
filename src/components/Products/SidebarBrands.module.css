@@ -1,0 +1,40 @@
+.sidebar {
+  padding: 1.25rem;
+  border-color: #7a7a7d;
+  border-width: 1px;
+  border-radius: 1rem;
+  width: 15%;
+  top: 2rem;
+  position: sticky;
+  border-style: solid;
+}
+
+.brands-heading {
+  color: #5e26bd;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.brands-heading p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.sidebar ul {
+  padding: 0 1.25rem;
+  list-style: none;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  color: #5224dd;
+}
