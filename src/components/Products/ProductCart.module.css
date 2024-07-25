@@ -1,3 +1,15 @@
+.card-container {
+  width: 100%;
+
+  &:hover {
+    img {
+      transform: scale(0.85);
+      transition: box-shadow, transform 0.5s ease;
+      background-color: rgba(251, 251, 251, 0.15);
+    }
+  }
+}
+
 .image-content,
 .card-content {
   display: flex;
@@ -29,7 +41,7 @@
 .card-name {
   font-size: 16px;
   color: #4e657b;
-  
+
   height: 5rem;
 }
 

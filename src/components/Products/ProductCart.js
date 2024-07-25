@@ -1,10 +1,8 @@
-import { Fragment } from "react";
-
 import classes from "./ProductCart.module.css";
 
 const ProductCart = ({ id, image, name, price }) => {
   return (
-    <Fragment>
+    <div className={classes["card-container"]}>
       <div className={classes["image-content"]}>
         <div className={classes["card-image"]}>
           <img src={image} className={classes["card-img"]} alt={name} />
@@ -16,7 +14,7 @@ const ProductCart = ({ id, image, name, price }) => {
         <p className={classes["card-price"]}>{`${price} تومان`}</p>
         <button className={classes.button}>افزودن به سبد</button>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

@@ -1,7 +1,10 @@
 import { sortItems } from "../../dummydata/sortItems";
 
-import classes from "./AllProducts.module.css";
+import Card from "../UI/Card";
+import ProductCart from "./ProductCart";
 import SidebarBrands from "./SidebarBrands";
+
+import classes from "./AllProducts.module.css";
 
 const AllProducts = (props) => {
   const allProducts = props.productsData;
@@ -18,11 +21,21 @@ const AllProducts = (props) => {
           </div>
         </div>
       </div>
+
       <SidebarBrands />
 
       <div className={classes["product-list"]}>
         {allProducts.map((product, index) => {
-          return <p>{product.name}</p>;
+          return (
+            <Card key={index} className={classes.card}>
+              <ProductCart
+                id={product.id}
+                image={product.image}
+                name={product.name}
+                price={product.price}
+              />
+            </Card>
+          );
         })}
       </div>
     </div>
