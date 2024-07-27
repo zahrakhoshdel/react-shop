@@ -1,9 +1,7 @@
+import HighlightedProduct from "../components/Products/HighlightedProduct";
+
 const ProductDetail = () => {
-  return (
-    <div className="centered">
-      <p>صفحه جزییات محصول</p>
-    </div>
-  );
+  return <HighlightedProduct />;
 };
 
 export default ProductDetail;
