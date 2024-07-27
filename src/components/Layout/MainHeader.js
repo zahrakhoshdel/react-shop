@@ -1,11 +1,16 @@
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/brandlogo.png";
 
 import classes from "./MainHeader.module.css";
 
 const MainHeader = () => {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>لوگو</div>
+      <div className={classes.logo}>
+        <NavLink to="/">
+          <img src={logo} alt="logo" />
+        </NavLink>
+      </div>
       <nav className={classes.nav}>
         <ul>
           <NavLink to="/">
