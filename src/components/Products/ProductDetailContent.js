@@ -1,3 +1,5 @@
+import AddToCartButton from "../UI/AddToCartButton";
+
 import classes from "./ProductDetailContent.module.css";
 
 const ProductDetailContent = () => {
@@ -27,7 +29,7 @@ const ProductDetailContent = () => {
             </div>
           </div>
         </div>
-        <button>افزودن به سبد خرید</button>
+        <AddToCartButton className={classes.button} />
       </div>
     </div>
   );

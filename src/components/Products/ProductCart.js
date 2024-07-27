@@ -1,3 +1,5 @@
+import AddToCartButton from "../UI/AddToCartButton";
+
 import classes from "./ProductCart.module.css";
 
 const ProductCart = ({ id, image, name, price }) => {
@@ -12,7 +14,7 @@ const ProductCart = ({ id, image, name, price }) => {
       <div className={classes["card-content"]}>
         <h3 className={classes["card-name"]}>{name}</h3>
         <p className={classes["card-price"]}>{`${price} تومان`}</p>
-        <button className={classes.button}>افزودن به سبد</button>
+        <AddToCartButton className={classes.button} />
       </div>
     </div>
   );
