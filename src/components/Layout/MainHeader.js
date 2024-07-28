@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
+
 import logo from "../../assets/brandlogo.png";
 
 import classes from "./MainHeader.module.css";
+import CartButton from "../UI/CartButton";
 
 const MainHeader = () => {
   return (
@@ -25,8 +27,12 @@ const MainHeader = () => {
         </ul>
       </nav>
       <div className={classes.shop}>
-        <NavLink to="/basket">سبد</NavLink>
-        <NavLink to="/profile">پروفایل</NavLink>
+        <div className={classes.row}>
+          <NavLink to="/basket">
+            <CartButton />
+          </NavLink>
+          <NavLink to="/profile">پروفایل</NavLink>
+        </div>
       </div>
     </header>
   );

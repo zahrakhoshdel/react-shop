@@ -42,6 +42,14 @@
   font-size: 1.25rem;
 }
 
-.shop a {
-  margin-right: 1.5rem;
+.shop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.row {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
 }
