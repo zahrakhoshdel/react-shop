@@ -1,0 +1,72 @@
+.sidebar {
+  padding: 0 1.25rem;
+  width: 30%;
+  top: 7rem;
+  position: sticky;
+}
+
+.order-summary {
+  border-color: rgb(206 208 208 / 1);
+  border-width: 1px;
+  border-radius: 1rem;
+  border-style: solid;
+  padding: 1.5rem 0;
+  color: #616161;
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-item {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  padding: 0.75rem 1.5rem;
+}
+
+.order-final {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  border-top: 1px solid #e2e2e2;
+}
+
+.order-btn {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.order-btn button {
+  cursor: pointer;
+  width: 100%;
+  background-color: #20abfc;
+  color: white;
+  margin: 0 1rem;
+  padding: 1rem 0;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+}
+
+.order-message {
+  font-size: 1rem;
+  color: #9b9b9b;
+  margin-top: 1rem;
+  flex-direction: row;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
