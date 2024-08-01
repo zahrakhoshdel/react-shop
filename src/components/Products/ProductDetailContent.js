@@ -1,4 +1,5 @@
 import AddToCartButton from "../UI/AddToCartButton";
+import Counter from "../UI/Counter";
 
 import classes from "./ProductDetailContent.module.css";
 
@@ -17,11 +18,7 @@ const ProductDetailContent = () => {
           <div className={classes.order}>
             <div className={classes.row}>
               <span>تعداد:</span>
-              <div className={classes.counter}>
-                <i>+</i>
-                <span className={classes.number}>1</span>
-                <i>-</i>
-              </div>
+              <Counter />
             </div>
             <div className={classes.price}>
               <span>قیمت:</span>

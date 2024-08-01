@@ -67,38 +67,13 @@
   display: flex;
 }
 
-.counter {
-  background-color: #e5f7fb;
-  display: inline-block;
-  border-radius: 0.75rem;
-  font-size: 0.875rem;
-  padding: 0.5rem;
-  user-select: none;
-  color: #616161;
-  margin-right: 1rem;
-  align-items: center;
-}
-
-.counter i {
-  background-color: #fff;
-  color: #616161;
-  vertical-align: middle;
-  border-radius: 50%;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 700;
-  width: 2rem;
-  height: 2rem;
-  display: inline-block;
-  text-align: center;
-  align-content: center;
-  /* font-size: 1.25rem; */
-  margin: 0 1rem;
+.row span {
+  margin-left: 1rem;
 }
 
 .price {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 4rem;
   align-items: center;
 }
 
