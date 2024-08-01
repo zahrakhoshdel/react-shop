@@ -1,9 +1,7 @@
+import BasketList from "../components/Basket/BasketList";
+
 const Basket = () => {
-  return (
-    <div className="centered">
-      <p>سبد خرید</p>
-    </div>
-  );
+  return <BasketList />;
 };
 
 export default Basket;
