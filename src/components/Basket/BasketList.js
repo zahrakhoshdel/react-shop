@@ -1,20 +1,34 @@
+import { useSelector } from "react-redux";
+
 import ProductItem from "./ProductItem";
 import OrderSummary from "./OrderSummary";
 import classes from "./BasketList.module.css";
 
 const BasketList = () => {
+  const cartQuantity = useSelector((state) => state.cart.totalQuantity);
+
+  const cartItems = useSelector((state) => state.cart.items);
+
   return (
     <div className={classes.container}>
       <div className={classes.heading}>
         <p>سبد خرید شما</p>
-        <span>5 عدد کالا</span>
+        <span>{cartQuantity} عدد کالا</span>
       </div>
       <div className={classes.list}>
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
-        <ProductItem />
+        {cartItems.map((item) => (
+          <ProductItem
+            key={item.id}
+            item={{
+              id: item.id,
+              title: item.name,
+              image: item.image,
+              quantity: item.quantity,
+              total: item.totalPrice,
+              price: item.price,
+            }}
+          />
+        ))}
       </div>
       <OrderSummary />
     </div>
