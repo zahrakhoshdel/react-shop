@@ -2,17 +2,17 @@ import classes from "./Counter.module.css";
 import addIcon from "../../assets/icon-add.svg";
 import deleteIcon from "../../assets/icon-delete.svg";
 
-const Counter = ({count}) => {
+const Counter = (props) => {
   return (
     <div className={classes.counter}>
-      <button>
-        <img src={addIcon} alt="add-icon"/>
+      <button onClick={props.onAddClick}>
+        <img src={addIcon} alt="add-icon" />
       </button>
       <div className={classes.number}>
-        <p>{count}</p>
+        <p>{props.count}</p>
       </div>
-      <button>
-        <img src={deleteIcon} alt="delete-icon"/>
+      <button onClick={props.onDeleteClick}>
+        <img src={deleteIcon} alt="remove-icon" />
       </button>
     </div>
   );

@@ -17,6 +17,7 @@ const cartSlice = createSlice({
           name: newItem.name,
           price: newItem.price,
           image: newItem.image,
+          brand: newItem.brand,
           totalPrice: newItem.price,
           quantity: 1,
         });

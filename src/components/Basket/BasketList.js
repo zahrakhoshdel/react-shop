@@ -21,8 +21,9 @@ const BasketList = () => {
             key={item.id}
             item={{
               id: item.id,
-              title: item.name,
+              name: item.name,
               image: item.image,
+              brand: item.brand,
               quantity: item.quantity,
               total: item.totalPrice,
               price: item.price,
