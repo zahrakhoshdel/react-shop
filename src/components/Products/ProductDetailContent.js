@@ -77,6 +77,7 @@ const ProductDetailContent = (props) => {
         <AddToCartButton
           className={classes.button}
           onClick={addToCartHandler}
+          change={existingProduct}
         />
       </div>
     </div>

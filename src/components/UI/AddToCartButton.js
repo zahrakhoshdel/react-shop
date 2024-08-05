@@ -3,10 +3,12 @@ import classes from "./AddToCartButton.module.css";
 const AddToCartButton = (props) => {
   return (
     <button
-      onClick={props.onClick}
-      className={`${classes.button} ${props.className ? props.className : ""}`}
+      onClick={props.change ? null : props.onClick}
+      className={`${classes.button} ${
+        props.change ? classes.inactive : classes.active
+      } ${props.className ? props.className : ""}`}
     >
-      افزودن به سبد خرید
+      {props.change ? "به سبد افزوده شد" : "افزودن به سبد خرید"}
     </button>
   );
 };

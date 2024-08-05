@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { cartActions } from "../../store/cart-slice";
 import AddToCartButton from "../UI/AddToCartButton";
@@ -8,8 +8,11 @@ import classes from "./ProductCart.module.css";
 
 const ProductCart = (props) => {
   const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart.items);
 
   const { id, name, image, brand, price } = props.item;
+
+  const existingProduct = cartItems.find((product) => product.id === id);
 
   const addToCartHandler = () => {
     dispatch(
@@ -37,6 +40,7 @@ const ProductCart = (props) => {
         <AddToCartButton
           className={classes.button}
           onClick={addToCartHandler}
+          change={existingProduct}
         />
       </div>
     </div>
