@@ -32,13 +32,16 @@ const CartSlider = () => {
         >
           {productsData.slice(0, size).map((product, index) => {
             return (
-              <SwiperSlide>
-                <Card key={index} className={classes["card-hov"]}>
+              <SwiperSlide key={product.id}>
+                <Card className={classes["card-hov"]}>
                   <ProductCart
-                    id={product.id}
-                    image={product.image}
-                    name={product.name}
-                    price={product.price}
+                    item={{
+                      id: product.id,
+                      name: product.name,
+                      image: product.image,
+                      brand: product.brand,
+                      price: product.price,
+                    }}
                   />
                 </Card>
               </SwiperSlide>

@@ -1,5 +1,6 @@
 .card-container {
   width: 100%;
+  padding: 0.75rem 0.2rem;
 
   &:hover {
     img {
@@ -10,17 +11,12 @@
   }
 }
 
-.image-content,
 .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.5rem 1rem;
-}
-
-.image-content {
+  padding: 0.5rem 0.5rem;
   position: relative;
-  padding: 0.5rem 0;
 }
 
 .card-image {
@@ -28,20 +24,17 @@
   height: 12rem;
   width: 10rem;
 }
+
 .card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.card-content {
-  padding-bottom: 1.5rem;
-}
-
 .card-name {
+  margin-top: 1rem;
   font-size: 16px;
   color: #4e657b;
-
   height: 5rem;
 }
 
@@ -49,7 +42,14 @@
   font-size: 18px;
   font-weight: 600;
   color: #333;
-
   text-align: center;
   height: 2.5rem;
+}
+
+.card-button {
+  padding-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 1rem;
 }

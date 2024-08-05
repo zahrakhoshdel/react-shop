@@ -16,7 +16,7 @@ const AllProducts = (props) => {
           <p>مرتب سازی براساس:</p>
           <div className={classes["sort-items"]}>
             {sortItems.map((item, index) => {
-              return <p>{item}</p>;
+              return <p key={index}>{item}</p>;
             })}
           </div>
         </div>
@@ -27,12 +27,15 @@ const AllProducts = (props) => {
       <div className={classes["product-list"]}>
         {allProducts.map((product, index) => {
           return (
-            <Card key={index} className={classes.card}>
+            <Card key={product.id} className={classes.card}>
               <ProductCart
-                id={product.id}
-                image={product.image}
-                name={product.name}
-                price={product.price}
+                item={{
+                  id: product.id,
+                  name: product.name,
+                  image: product.image,
+                  brand: product.brand,
+                  price: product.price,
+                }}
               />
             </Card>
           );

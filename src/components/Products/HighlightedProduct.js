@@ -3,13 +3,13 @@ import ProductDetailContent from "./ProductDetailContent";
 
 import classes from "./HighlightedProduct.module.css";
 
-const HighlightedProduct = () => {
+const HighlightedProduct = (props) => {
   return (
     <div className={classes["container-fluid"]}>
       <div className={classes.container}>
         <div className={classes.row}>
-          <ProductDetailImage />
-          <ProductDetailContent />
+          <ProductDetailImage image={props.data.image} />
+          <ProductDetailContent item={props.data} />
         </div>
       </div>
     </div>

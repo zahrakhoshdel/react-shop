@@ -29,6 +29,11 @@
   margin-bottom: 0.5rem;
 }
 
+.title p {
+  color: #a0a0a7;
+  -webkit-text-stroke: thin;
+}
+
 .description {
   padding-top: 2rem;
   flex-wrap: 1;
