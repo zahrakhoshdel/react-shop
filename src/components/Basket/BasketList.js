@@ -16,20 +16,24 @@ const BasketList = () => {
         <span>{cartQuantity} عدد کالا</span>
       </div>
       <div className={classes.list}>
-        {cartItems.map((item) => (
-          <ProductItem
-            key={item.id}
-            item={{
-              id: item.id,
-              name: item.name,
-              image: item.image,
-              brand: item.brand,
-              quantity: item.quantity,
-              total: item.totalPrice,
-              price: item.price,
-            }}
-          />
-        ))}
+        {cartQuantity > 0 ? (
+          cartItems.map((item) => (
+            <ProductItem
+              key={item.id}
+              item={{
+                id: item.id,
+                name: item.name,
+                image: item.image,
+                brand: item.brand,
+                quantity: item.quantity,
+                total: item.totalPrice,
+                price: item.price,
+              }}
+            />
+          ))
+        ) : (
+          <p>سبد خرید شما خالی است!</p>
+        )}
       </div>
       <OrderSummary />
     </div>
