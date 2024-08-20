@@ -6,6 +6,8 @@ import classes from "./MainHeader.module.css";
 import CartButton from "../UI/CartButton";
 
 const MainHeader = () => {
+  const setActive = ({ isActive }) => (isActive ? classes.active : "");
+
   return (
     <header className={classes.header}>
       <div className={classes.logo}>
@@ -15,13 +17,13 @@ const MainHeader = () => {
       </div>
       <nav className={classes.nav}>
         <ul>
-          <NavLink to="/">
+          <NavLink to="/" className={setActive}>
             <li>خانه</li>
           </NavLink>
-          <NavLink to="/products">
+          <NavLink to="/products" className={setActive}>
             <li>محصولات</li>
           </NavLink>
-          <NavLink to="/contact-us">
+          <NavLink to="/contact-us" className={setActive}>
             <li>تماس با ما</li>
           </NavLink>
         </ul>

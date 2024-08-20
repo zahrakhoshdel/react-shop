@@ -39,7 +39,6 @@
 
 .nav li {
   margin: 0 1.5rem;
-  font-size: 1.25rem;
 }
 
 .shop {
@@ -52,4 +51,15 @@
   align-items: center;
   justify-content: flex-end;
   display: flex;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: #5519d7;
+}
+
+.nav a:active,
+.nav a.active {
+  font-weight: 600;
 }
