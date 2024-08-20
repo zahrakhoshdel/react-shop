@@ -8,6 +8,7 @@ import ContactUs from "./pages/ContactUs";
 import Basket from "./pages/Basket";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import BackToTopButton from './components/BackToTop/BackToTopButton';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <BackToTopButton />
       </Layout>
     </Router>
   );
