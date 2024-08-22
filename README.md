@@ -24,16 +24,16 @@ You can access the live application at [Online Demo Store](https://zahrakhoshdel
 
 <details>
 <summary>See ScreenShots</summary>
-<img src="screens/home-carousel.png" alt="home-carousel-image" width="500">
-  <img src="screens/home-footer.png" alt="home-footer-image" width="500">
-  <img src="screens/home-products-slider.png" alt=home-products-slider-image" width="500">
-  <img src="screens/product-detail-page.png" alt="product-detail-page-image" width="500">
+<img src="screens/home-carousel.png" alt="home-carousel-image" width="300">
+  <img src="screens/home-footer.png" alt="home-footer-image" width="300">
+  <img src="screens/home-products-slider.png" alt=home-products-slider-image" width="300">
+  <img src="screens/product-detail-page.png" alt="product-detail-page-image" width="300">
 
-<img src="screens/home-banners&brands.png" alt="home-banners&brands-image" width="500">
-<img src="screens/products-page.png" alt="products-page-image" width="500">
-<img src="screens/home-support.png" alt="home-support-image" width="500">
+<img src="screens/home-banners&brands.png" alt="home-banners&brands-image" width="300">
+<img src="screens/products-page.png" alt="products-page-image" width="300">
+<img src="screens/home-support.png" alt="home-support-image" width="300">
 
-<img src="screens/basket-page.png" alt="basket-page-image" width="500">
+<img src="screens/basket-page.png" alt="basket-page-image" width="300">
 </details>
 
 
