@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-shop/static/css/main.6ddb5951.css",
-    "main.js": "/react-shop/static/js/main.b7efc0e5.js",
+    "main.js": "/react-shop/static/js/main.7f5c9c0f.js",
     "static/media/banner2.png": "/react-shop/static/media/banner2.801c4ecc62284e2de6ec.png",
     "static/media/carousel-banner3.png": "/react-shop/static/media/carousel-banner3.11899e7d14cffae58908.png",
     "static/media/carousel-banner1.png": "/react-shop/static/media/carousel-banner1.4867ede7c7f5c9e2b734.png",
@@ -28,10 +28,10 @@
     "static/media/arrow-up.svg": "/react-shop/static/media/arrow-up.2c0bfb6c96d31d9cdbf4efc991b27d9b.svg",
     "static/media/left-arrow.svg": "/react-shop/static/media/left-arrow.af0be38da0f25973825f0576804611c8.svg",
     "main.6ddb5951.css.map": "/react-shop/static/css/main.6ddb5951.css.map",
-    "main.b7efc0e5.js.map": "/react-shop/static/js/main.b7efc0e5.js.map"
+    "main.7f5c9c0f.js.map": "/react-shop/static/js/main.7f5c9c0f.js.map"
   },
   "entrypoints": [
     "static/css/main.6ddb5951.css",
-    "static/js/main.b7efc0e5.js"
+    "static/js/main.7f5c9c0f.js"
   ]
 }
