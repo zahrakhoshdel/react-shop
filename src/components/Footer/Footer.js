@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 
 import LineShape from "./LineShape";
 import FooterColumn from "./FooterColumn";
@@ -27,15 +28,15 @@ const Footer = () => {
             </div>
             <div className={classes["page-link"]}>
               <ul>
-                <li>
-                  <a href="/">صفحه اصلی</a>
-                </li>
-                <li>
-                  <a href="/">محصولات</a>
-                </li>
-                <li>
-                  <a href="/">تماس با ما</a>
-                </li>
+                <NavLink to="/">
+                  <li>صفحه اصلی</li>
+                </NavLink>
+                <NavLink to="/products">
+                  <li>محصولات</li>
+                </NavLink>
+                <NavLink to="/contact-us">
+                  <li>تماس با ما</li>
+                </NavLink>
               </ul>
             </div>
           </div>
